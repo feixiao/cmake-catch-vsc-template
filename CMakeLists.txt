@@ -29,14 +29,17 @@ set(SOURCE_FILES src/main/main.cpp)
 
 set(LIBRARY_NAME cpplib)
 
-include(FetchContent)
 
+# https://www.cnblogs.com/pandamohist/p/13699911.html
+
+include(FetchContent)			 		# 照写，不需要修改
 # Downloading abseil package
 FetchContent_Declare(
-  abseil
-  URL https://github.com/abseil/abseil-cpp/archive/master.zip)
+  abseil	#库名字 
+  URL https://github.com/abseil/abseil-cpp/archive/master.zip # 仓库地址
+)
 FetchContent_Populate(abseil)
-message(STATUS "abseil is available in " ${abseil_SOURCE_DIR})
+message(STATUS "abseil is available in " ${abseil_SOURCE_DIR})   # ???
 
 
 # Where any include files are

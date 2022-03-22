@@ -7,6 +7,7 @@ set(SOURCE_FILES
 	tests.cpp
 )
 
+# 直接引用了cpplib
 set(LIBRARY_NAME cpplib)
 
 add_executable(tests ${SOURCE_FILES})
