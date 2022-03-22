@@ -48,7 +48,7 @@ git clone https://github.com/ourarash/cmake-catch-vsc-template
 ```
 
 ## Configuring CMake
-Once CMake and CMake extensions are installed, type the following in the command line:
+Once CMake and CMake extensions are installed, type the following in the command line(osx command+shift+p):
 
 `CMake: Configure`
 
